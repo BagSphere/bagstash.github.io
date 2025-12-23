@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hard Shell Suitcase | BagSphere</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <img src="Images/logo.png" class="logo">
+  <p class="tagline">Trust • Style • Durability</p>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="container breadcrumb">
+  <a href="index.html">Home</a> ›
+  <a href="products.html">Products</a> ›
+  <span>Hard Shell Suitcase</span>
+</div>
+
+<!-- PRODUCT DETAIL -->
+<section class="products">
+  <div class="container product-detail">
+
+    <!-- IMAGE GALLERY -->
+    <div class="product-image">
+      <img id="mainImg" src="Images/suitcase.jpg" alt="Hard Shell Suitcase">
+      <div class="thumbs">
+        <img src="Images/suitcase.jpg" onclick="changeImg(this.src)">
+        <img src="Images/suitcase2.jpg" onclick="changeImg(this.src)">
+        <img src="Images/suitcase3.jpg" onclick="changeImg(this.src)">
+      </div>
+    </div>
+
+    <!-- PRODUCT INFO -->
+    <div class="product-info">
+      <h2>Hard Shell Suitcase</h2>
+      <div class="rating">⭐⭐⭐⭐⭐ <span>(124 reviews)</span></div>
+      <p class="price">₹2,999</p>
+      <p class="desc">
+        Premium hard shell suitcase built for long journeys.
+        Scratch resistant body, smooth wheels, and secure lock system.
+      </p>
+
+      <ul class="features">
+        <li>✔ ABS Hard Shell</li>
+        <li>✔ 360° Spinner Wheels</li>
+        <li>✔ TSA Number Lock</li>
+        <li>✔ Water Resistant</li>
+      </ul>
+
+      <!-- SPEC TABLE -->
+      <table class="specs">
+        <tr><td>Capacity</td><td>60 Liters</td></tr>
+        <tr><td>Material</td><td>ABS Plastic</td></tr>
+        <tr><td>Weight</td><td>4.2 kg</td></tr>
+        <tr><td>Warranty</td><td>3 Years</td></tr>
+      </table>
+
+      <!-- BUY BUTTONS -->
+      <div class="buy-buttons">
+        <a href="upi://pay?pa=bagsphere@ybl&pn=BagSphere&am=2999&cu=INR" class="btn">Pay via UPI</a>
+        <a href="https://wa.me/918777438644?text=I want to buy Hard Shell Suitcase for ₹2,999" class="btn whatsapp" target="_blank">Order on WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div>✔ 3 Year Warranty</div>
+    <div>✔ Easy Returns</div>
+    <div>✔ Fast Shipping</div>
+    <div>✔ Trusted Brand</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <h4>BagSphere</h4>
+    <p>Premium Bags & Luggage</p>
+    <p>📞 8777438644</p>
+    <p>© 2025 BagSphere</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+function changeImg(src) {
+  document.getElementById("mainImg").src = src;
+}
+</script>
+
+</body>
+</html>
