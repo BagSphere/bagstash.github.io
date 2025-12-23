@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Products | BagSphere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="header">
-  <img src="Images/logo.png" class="logo">
+  <img src="Images/logo.png" alt="BagSphere Logo" class="logo">
+  <p class="tagline">Trust • Style • Durability</p>
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
@@ -16,35 +17,35 @@
   </nav>
 </header>
 
-<div class="filter-bar">
-  <button onclick="filter('all')">All</button>
-  <button onclick="filter('suitcase')">Suitcase</button>
-  <button onclick="filter('backpack')">Backpack</button>
+<div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="suitcase">Suitcase</button>
+  <button class="filter-btn" data-filter="backpack">Backpack</button>
 </div>
 
 <section class="products">
   <div class="product-grid">
-
-    <div class="product-card suitcase">
-      <img src="Images/suitcase.jpg">
+    <a href="product-suitcase.html" class="product-card" data-category="suitcase">
+      <div class="skeleton-img"></div>
       <h4>Hard Shell Suitcase</h4>
       <span>₹2,999</span>
-    </div>
-
-    <div class="product-card backpack">
-      <img src="Images/backpack1.jpg">
+    </a>
+    <a href="product-backpack1.html" class="product-card" data-category="backpack">
+      <div class="skeleton-img"></div>
       <h4>Adventure Backpack</h4>
       <span>₹689</span>
-    </div>
-
-    <div class="product-card backpack">
-      <img src="Images/backpack2.jpg">
+    </a>
+    <a href="product-backpack2.html" class="product-card" data-category="backpack">
+      <div class="skeleton-img"></div>
       <h4>Urban Backpack</h4>
       <span>₹789</span>
-    </div>
-
+    </a>
   </div>
 </section>
+
+<footer class="footer">
+  <p>© 2025 BagSphere</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
