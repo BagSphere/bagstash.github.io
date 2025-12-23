@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="header">
   <img src="Images/logo.png" alt="BagSphere Logo" class="logo">
   <p class="tagline">Trust • Style • Durability</p>
@@ -17,33 +18,38 @@
   </nav>
 </header>
 
-<div class="filter-buttons">
-  <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="suitcase">Suitcase</button>
-  <button class="filter-btn" data-filter="backpack">Backpack</button>
+<div class="contact-bar">
+  <a href="tel:+918777438644" class="call-btn">📞 Bulk Orders: +91 87774 38644</a>
+  <a href="https://wa.me/916291083811" target="_blank" class="wa-btn">
+    <img src="Images/whatsapp.png" alt="WhatsApp"> Helpline Chat
+  </a>
 </div>
 
 <section class="products">
-  <div class="product-grid">
-    <a href="product-suitcase.html" class="product-card" data-category="suitcase">
-      <div class="skeleton-img"></div>
-      <h4>Hard Shell Suitcase</h4>
-      <span>₹2,999</span>
-    </a>
-    <a href="product-backpack1.html" class="product-card" data-category="backpack">
-      <div class="skeleton-img"></div>
-      <h4>Adventure Backpack</h4>
-      <span>₹689</span>
-    </a>
-    <a href="product-backpack2.html" class="product-card" data-category="backpack">
-      <div class="skeleton-img"></div>
-      <h4>Urban Backpack</h4>
-      <span>₹789</span>
-    </a>
+  <h3 class="section-title">All Products</h3>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="suitcase">Suitcases</button>
+    <button class="filter-btn" data-filter="backpack">Backpacks</button>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="product-grid" id="productGrid">
+    <!-- Skeletons -->
+    <div class="product-card skeleton"></div>
+    <div class="product-card skeleton"></div>
+    <div class="product-card skeleton"></div>
+    <div class="product-card skeleton"></div>
+    <!-- Actual products populated by JS -->
   </div>
 </section>
 
 <footer class="footer">
+  <p><strong>BagSphere</strong></p>
+  <p>📦 Bulk Contact: <a href="tel:+918777438644">+91 87774 38644</a></p>
+  <p>💬 WhatsApp Helpline: <a href="https://wa.me/916291083811" target="_blank">+91 62910 83811</a></p>
   <p>© 2025 BagSphere</p>
 </footer>
 
